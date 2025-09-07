@@ -1,0 +1,139 @@
+@font-face {
+    font-family: "YoungSerif";
+    src: url(assets/fonts/young-serif/YoungSerif-Regular.ttf) format(truetype);
+}
+
+@font-face {
+    font-family: "OutfitExtraBold";
+    src: url(assets/fonts/outfit/static/Outfit-ExtraBold.ttf) format(truetype);
+}
+
+@font-face {
+    font-family: "Outfit";
+    src: url(assets/fonts/outfit/Outfit-VariableFont_wght.ttf) format(truetype);
+}
+
+* {
+    font-size: 12px;
+    font-family: "Outfit";
+    color: hsl(30, 10%, 34%);
+}
+
+body, main {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(30, 54%, 90%);
+}
+
+.container {
+    width: 40%;
+    align-self: center;
+    margin: 5rem;
+    padding: 1.5rem;
+    border-radius: 15px;
+    background-color: hsl(0, 0%, 100%);
+}
+
+img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 400;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: hsl(24, 5%, 18%);
+}
+
+.description {
+    color: hsl(30, 10%, 34%);
+    font-size: 1.1em;
+}
+
+.prep-container {
+    background-color: hsl(330, 100%, 98%);
+    padding: .25rem 1rem;
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+    border-radius: 10px;
+}
+
+.prep-time {
+    color: hsl(332, 51%, 32%);
+}
+
+.sub {
+    padding-top: 1rem;
+}
+
+ul, ol {
+    padding-left: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+li {
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+}
+
+li::marker, .sub, .amount {
+    color: hsl(14, 45%, 36%);
+}
+
+.row {
+    margin-bottom: 1.2rem;
+}
+
+.row {
+    display: flex;
+      flex-direction: row;
+      padding-left: 2rem;
+      justify-content: space-between;
+}
+
+.row {
+      div{
+        width: 130px;
+      }
+    }
+
+.amount {
+    font-weight: bold;
+}
+
+@media screen and (max-width: 375px) {
+    body, main {
+        padding: 0;
+        margin: 0;
+    }
+
+    img {
+        border-radius: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    h1 {
+        padding-top: 15rem;
+    }
+
+    .container{
+        width: 100vw;
+        padding-top: 0;
+        margin-top: 0;
+        padding-bottom: 0;
+        margin-bottom: 0;
+        box-sizing: border-box;
+        border-radius: 0;
+    }
+
+    .attribution {
+        display: none;
+    }
+}
